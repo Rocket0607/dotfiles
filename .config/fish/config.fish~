@@ -1,0 +1,11 @@
+starship init fish | source
+set fish_greeting
+colorscript --random
+
+alias todo="python3 /home/rohitk/Documents/todo-terminal/main.py"
+alias git-push="python3 /home/rohitk/Scripts/git_add_commit_push.py"
+alias doom="~/.emacs.d/bin/doom"
+
+fish_vi_key_bindings
+
+export EDITOR="/usr/bin/nvim"

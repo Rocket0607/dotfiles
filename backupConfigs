@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+FILENAME="filesToBackup.txt"
+PKGLIST="pkglist.txt"
+
+pacman -Qqe > pkglist.txt
+
+for LINE in $(cat $FILENAME)
+do
+echo "adding $LINE"
+	yadm add "$LINE"
+done
+
+yadm commit -m "updating configs"
+yadm push -u origin master

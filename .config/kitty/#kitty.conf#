@@ -1,0 +1,44 @@
+font_family      Jetbrains Mono
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+
+font_size 14.0
+
+adjust_line_height 5
+
+background #282c34
+foreground #bbc2cf
+
+color0 #1c1f24
+color8 #5b6268
+
+color1 #ff6c6b
+color9 #da8548
+
+color2 #95c765
+color10 #95c765
+
+color3 #da8548
+color11 #ecbe7b
+
+color4 #4da1de
+color12 #4da1de
+
+color5 #c678dd
+color13 #a9a1e1
+
+color6 #4671b6
+color14 #5b94ee
+
+color7 #202328
+color15 #dfdfdf
+
+shell zsh
+
+map ctrl+shift+c     copy_to_clipboard
+map ctrl+shift+v     paste_from_clipboard
+map ctrl+c           kill
+map ctrl+equal       change_font_size current +0.5
+map ctrl+minus       change_font_size current -0.5
+map ctrl+0           change_font_size current 0
