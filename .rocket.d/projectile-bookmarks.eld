@@ -1,0 +1,1 @@
+("~/Documents/RestaurantDirect/" "~/.emacs.d/" "~/" "~/Documents/org/" "~/Applications/st/")

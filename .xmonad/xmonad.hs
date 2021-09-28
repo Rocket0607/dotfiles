@@ -1,4 +1,4 @@
--- Base
+  -- Base
 import XMonad
 import System.Directory
 import System.IO (hPutStrLn)
@@ -69,7 +69,7 @@ myModMask :: KeyMask
 myModMask = mod4Mask        -- Sets modkey to super/windows key
 
 myTerminal :: String
-myTerminal = "st"    -- Sets default terminal
+myTerminal = "kitty"    -- Sets default terminal
 
 myBrowser :: String
 myBrowser = "qutebrowser "  -- Sets qutebrowser as browser
@@ -78,7 +78,7 @@ myEmacs :: String
 myEmacs = "emacsclient -c -a 'emacs' "  -- Makes emacs keybindings easier to type
 
 myEditor :: String
-myEditor = "emacsclient -c -a 'emacs' "  -- Sets emacs as editor
+myEditor = "neovide"  -- Sets emacs as editor
 -- myEditor = myTerminal ++ " -e vim "    -- Sets vim as editor
 
 myBorderWidth :: Dimension
@@ -105,7 +105,8 @@ myStartupHook = do
     spawnOnce "blueberry-tray &"
     spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282c34  --height 22 &"
     spawnOnce "/usr/bin/emacs --daemon &" -- emacs daemon for the emacsclient
-    spawnOnce "~/.fehbg"
+    spawnOnce "setxkbmap compose:ralt &"
+    spawnOnce "nitrogen --restore"
     setWMName "LG3D"
 
 myColorizer :: Window -> Bool -> X (String, String)
@@ -192,7 +193,6 @@ myManageHook = composeAll
      , className =? "splash"          --> doFloat
      , className =? "toolbar"         --> doFloat
      , className =? "discord"         --> doShift ( myWorkspaces !! 4 )
-     , className =? "qutebrowser"     --> doShift ( myWorkspaces !! 3 )
      , title =? "Oracle VM VirtualBox Manager"  --> doFloat
      , (className =? "firefox" <&&> resource =? "Dialog") --> doFloat  -- Float Firefox Dialog
      ]
@@ -214,9 +214,10 @@ myKeys =
         , ("M-p m", spawn "~/dmscripts/dmcalc")   -- plays ambient sounds
         , ("M-p t", spawn "~/dmscripts/dmtodo")   -- shows all todos
         , ("M-p p", spawn "~/dmscripts/dmpass")   -- shows all todos
+        , ("M-p =", spawn "= --dmenu=dmenu")      -- opens menu-calq (calculator that uses dmenu/rofi, dmenu is the selected option here)
 
     -- Useful programs to have a keybinding for launch
-        , ("M-<Return>", spawn (myTerminal ++ " -e zsh"))
+        , ("M-<Return>", spawn (myTerminal))
         , ("M-b q", spawn ("qutebrowser"))
         , ("M-b f", spawn ("firefox"))
         , ("M-M1-h", spawn (myTerminal ++ " -e htop"))

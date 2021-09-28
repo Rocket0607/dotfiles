@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+xrandr --output eDP-1 --mode 1920x1200
+xrandr --output DP-3 --off
+nitrogen --restore

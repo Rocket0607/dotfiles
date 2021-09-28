@@ -159,7 +159,8 @@ myStartupHook = do
     spawnOnce "blueberry-tray &"
     spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282c34  --height 22 &"
     spawnOnce "/usr/bin/emacs --daemon &" -- emacs daemon for the emacsclient
-    spawnOnce "~/.fehbg"
+    spawnOnce "setxkbmap compose:ralt &"
+    spawnOnce "nitrogen --restore"
     setWMName "LG3D"
 #+END_SRC
 
@@ -294,6 +295,7 @@ myKeys =
         , ("M-p m", spawn "~/dmscripts/dmcalc")   -- plays ambient sounds
         , ("M-p t", spawn "~/dmscripts/dmtodo")   -- shows all todos
         , ("M-p p", spawn "~/dmscripts/dmpass")   -- shows all todos
+        , ("M-p =", spawn "= --dmenu=dmenu")      -- opens menu-calq (calculator that uses dmenu/rofi, dmenu is the selected option here)
 
     -- Useful programs to have a keybinding for launch
         , ("M-<Return>", spawn (myTerminal ++ " -e zsh"))

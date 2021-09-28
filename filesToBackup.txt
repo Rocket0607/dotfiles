@@ -20,3 +20,4 @@
 /home/rohitk/Applications/dmenu-5.0/
 /home/rohitk/4coder_rocket/
 /home/rohitk/filesToBackup.txt
+/home/rohitk/.config/nvim/

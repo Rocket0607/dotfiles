@@ -1,0 +1,1 @@
+("~/Documents/RestaurantDirect/" "~/.emacs.d/elpa/vterm-20210824.1453/" "~/" "~/Documents/org/" "~/Applications/st/")

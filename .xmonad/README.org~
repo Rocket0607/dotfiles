@@ -239,7 +239,7 @@ I have made my workspaces in xmobar "clickable." Clickable workspaces means the 
 
 #+begin_src haskell
 -- myWorkspaces = [" 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", " 9 "]
-myWorkspaces = ["WORK ", "TERM ", "DEV ", "WWW ", "CHAT ", "MUS ", "FUN ", "SYS ", "TODO "]
+myWorkspaces = ["I ", "II ", "III ", "IV ", "V ", "VI ", "VII ", "VIII ", "IX "]
 myWorkspaceIndices = M.fromList $ zipWith (,) myWorkspaces [1..] -- (,) == \x y -> (x,y)
 
 clickable ws = "<action=xdotool key super+"++show i++">"++ws++"</action>"

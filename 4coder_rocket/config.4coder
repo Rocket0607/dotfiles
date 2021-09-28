@@ -61,7 +61,7 @@ indent_width = 4;
 default_tab_width = 4;
 
 // Theme
-default_theme_name = "theme-doomone";
+default_theme_name = "theme-wombat";
 
 // Font
 default_font_name = "jetbrains-mono.ttf";

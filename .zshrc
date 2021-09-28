@@ -82,7 +82,7 @@ CASE_SENSITIVE="true"
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='emacs'
+  export EDITOR='nvim'
 fi
 
 # Compilation flags
