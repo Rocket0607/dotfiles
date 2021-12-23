@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+gcc $1.c -std=c99 -lncurses -o $1
+./$1

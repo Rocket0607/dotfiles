@@ -21,3 +21,10 @@
 /home/rohitk/4coder_rocket/
 /home/rohitk/filesToBackup.txt
 /home/rohitk/.config/nvim/
+/home/rohitk/Documents/assembly/
+/home/rohitk/Documents/cCode/
+/home/rohitk/Documents/cppCode/
+/home/rohitk/Documents/pythonScripts/
+/home/rohitk/Documents/todoTerminal/
+/home/rohitk/Documents/RocketOS/
+
