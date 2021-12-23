@@ -1,3 +1,5 @@
+vim.cmd "command Runc --nargs=1 :!run_c <args>"
+
 local init_modules = {
    "core",
 }

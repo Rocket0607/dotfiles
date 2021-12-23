@@ -214,6 +214,7 @@ myKeys =
         , ("M-p m", spawn "~/dmscripts/dmcalc")   -- plays ambient sounds
         , ("M-p t", spawn "~/dmscripts/dmtodo")   -- shows all todos
         , ("M-p p", spawn "~/dmscripts/dmpass")   -- shows all todos
+        , ("M-p o", spawn "~/dmscripts/dmproj")   -- shows all todos
         , ("M-p =", spawn "= --dmenu=dmenu")      -- opens menu-calq (calculator that uses dmenu/rofi, dmenu is the selected option here)
 
     -- Useful programs to have a keybinding for launch

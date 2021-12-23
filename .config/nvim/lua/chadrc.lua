@@ -82,7 +82,7 @@ M.plugin_status = {
    cheatsheet = true, -- fuzzy search your commands/keymappings
    colorizer = true,
    comment = true, -- universal commentor
-   dashboard = false, -- a nice looking dashboard
+   dashboard = true, -- a nice looking dashboard
    esc_insertmode = true, -- escape from insert mode using custom keys
    feline = true, -- statusline
    gitsigns = true, -- gitsigns in statusline
@@ -98,6 +98,8 @@ M.plugin_status = {
 -- mappings -- don't use a single keymap twice --
 -- non plugin mappings
 M.mappings = {
+   code_actions = "<leader>ca",
+   lsp_format = "<leader>cf",
    -- close current focused buffer
    close_buffer = "<leader>x",
    copy_whole_file = "<C-a>", -- copy all contents of the current buffer

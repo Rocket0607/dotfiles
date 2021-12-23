@@ -13,6 +13,10 @@ local M = {}
 -- these mappings will only be called during initialization
 M.misc = function()
    local function non_config_mappings()
+
+     -- ADDED BY ROCKET
+     map("n", maps.code_actions, ":lua vim.lsp.buf.code_action()<CR>")
+     map("n", maps.lsp_format, ":lua vim.lsp.buf.formatting_sync(nil, 1000)<CR>")
       -- Don't copy the replaced text after pasting in visual mode
       map("v", "p", '"_dP')
 

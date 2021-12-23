@@ -6,6 +6,7 @@ end
 ts_config.setup {
    ensure_installed = {
       "lua",
+      "dart",
    },
    highlight = {
       enable = true,
